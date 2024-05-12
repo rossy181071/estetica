@@ -20,35 +20,79 @@ export class MyElement extends LitElement {
       /**
        * Este es mi parrafo 1
        */
-      paragraph1: { type: String },     
+      paragraph1: { type: String },
+      /**
+       * Esta es la 1 url de la imagen
+       */
+
+      Image1url: { type: String },
+      /**
+       *Este es mi parrafo 2
+       */
+      paragraph2: { type: String },
+      /**
+       * Este es el elemento 1 de la lista 1
+       */
+      list1Element1: { type: String },
+      /**
+       * Este es el elemento 2 de la lista 1
+       */
+      list1Element2: { type: String },
+      /**
+       * Este es el elemento 3 de la lista 1
+       */
+      list1Element3: { type: String },
+      /**
+       * Este es el elemento 4 de la lista 1
+       */
+      list1Element4: { type: String },
+      /**
+       * Este es el elemento 5 de la lista 1
+       */
+      list1Element5: { type: String },
+      /**
+       * Este es el elemento 6 de la lista 1
+       */
+      list1Element6: { type: String },
     }
+
+
   }
 
   constructor() {
     super()
-    this.title = 'ESTETICA'
-    this.subtitulo = 'ATENCION PERSONALIZADA'
+    this.title = 'ESTETICA ROSSY'
+    this.subtitulo = 'PERSONAL PROFESIONAL'
     this.paragraph1 = 'CALIDAD Y PRECIO'
+    this.image1Url = 'https://2.bp.blogspot.com/-mw9Dvr4uX3E/WFmfyD-mk0I/AAAAAAAACwU/kX_WjxBZWTEhUkUn3-yL2e576U_3m-OAQCLcB/s1600/42478249_l.jpg'
+    this.paragraph2 = 'Bienvenidos Ofrecemos Diferentes servicos Unisex como:'
+    this.list1Element1 = 'Cortes con tijera'
+    this.list1Element2 = 'Cortes con navaja'
+    this.list1Element3 = 'Cortes con Maquina'
+    this.list1Element4 = 'Rayos'
+    this.list1Element5 = 'Tintes'
+    this.list1Element6 = 'Efectos'
+
   }
 
   render() {
     return html`
-      <div>
-        
-      </div>
-      <slot></slot>
-      <div class="card">
-        <button @click=${this._onClick} part="button">
-          count is ${this.count}
-        </button>
-      </div>
-      <p class="read-the-docs">${this.docsHint}</p>
-    `
+      <div id="main">
+        <h1>${this.title}</h1>
+        <h2>${this.subtitle}</h2>
+        <p>${this.paragraph1}</p>
+        <img src="${this.image1Url}">
+        <p>${this.paragraph2}</p>
+        <li><i>${this.list1Element1}</i></li>
+        <li><i>${this.list1Element2}</i></li>
+        <li><i>${this.list1Element3}</i></li>
+        <li><i>${this.list1Element4}</i></li>
+        <li><i>${this.list1Element5}</i></li>
+        <li><i>${this.list1Element6}</i></li>
+           
+      </div>`
   }
-
-  _onClick() {
-    this.count++
-  }
+      
 
   static get styles() {
     return css`
@@ -59,67 +103,54 @@ export class MyElement extends LitElement {
         text-align: center;
       }
 
-      .logo {
-        height: 6em;
-        padding: 1.5em;
-        will-change: filter;
-        transition: filter 300ms;
+      
+     
+      body{
+        background-color: plum;
       }
-      .logo:hover {
-        filter: drop-shadow(0 0 2em #646cffaa);
+      p {
+        background-color: chartreuse;
+        font-family: Georgia;
+        color: rgb(165, 42, 144);
       }
-      .logo.lit:hover {
-        filter: drop-shadow(0 0 2em #325cffaa);
+      #Estetica {
+        background-color: rgb(187, 109, 109);
+        font-family: Times;
+        color: blue;
       }
-
-      .card {
-        padding: 2em;
+      div{
+        padding: 15vw ;
       }
-
-      .read-the-docs {
-        color: #888;
+      #estetica {
+        background-color: cadetblue;
       }
-
-      a {
-        font-weight: 500;
-        color: #646cff;
-        text-decoration: inherit;
+      img {
+        width:25vw;
       }
-      a:hover {
-        color: #535bf2;
+      p {
+        font-size:10vh;
       }
-
-      ::slotted(h1) {
-        font-size: 3.2em;
-        line-height: 1.1;
+      h1{
+        font-size:15vh;
       }
 
-      button {
-        border-radius: 8px;
-        border: 1px solid transparent;
-        padding: 0.6em 1.2em;
-        font-size: 1em;
-        font-weight: 500;
-        font-family: inherit;
-        background-color: #1a1a1a;
-        cursor: pointer;
-        transition: border-color 0.25s;
+      #titulo-1 {
+        color: coral;
       }
-      button:hover {
-        border-color: #646cff;
+      #titulo-2 {
+        color: aqua;
       }
-      button:focus,
-      button:focus-visible {
-        outline: 4px auto -webkit-focus-ring-color;
+      #titulo-3 {
+        color: chartreuse;
       }
-
-      @media (prefers-color-scheme: light) {
-        a:hover {
-          color: #747bff;
-        }
-        button {
-          background-color: #f9f9f9;
-        }
+      #titulo-4 {
+        color: brown;
+      }
+      #titulo-5 {
+        color: darkgreen;
+      }
+      #titulo-6 {
+        color: darkorchid;
       }
     `
   }

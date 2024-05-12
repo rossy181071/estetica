@@ -72,6 +72,17 @@ export class MyElement extends LitElement {
     this.list1Element4 = 'Rayos'
     this.list1Element5 = 'Tintes'
     this.list1Element6 = 'Efectos'
+    this.paragraph3 = 'RAYOS'
+    this.image2Url = 'https://i.pinimg.com/736x/37/55/be/3755be455cff92129b938f0cdbd95b7e.jpg'
+    this.paragraph4 = 'CORTES A TIJERA Y MAQUINA'
+    this.image3Url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9BaZYz_PfECR9emDZyqO_Hx3HqCQLmhEdr93Rqdhn_g&s'
+    this.paragraph5 = 'EFECTOS EN CABELLO PARA MUJER Y HOMBRE'
+    this.image4Url = 'https://cdn.pixabay.com/photo/2014/12/31/10/11/woman-584797_1280.jpg'
+    this.paragraph6 = 'CORTE A NAVAJA LARGOS Y CORTOS, DAMA Y CABALLERO'    
+    this.image5Url = 'https://i.ytimg.com/vi/qD146yhOUtI/maxresdefault.jpg'
+    this.paragraph7 = 'ABIERTO DE LUNES A SABADO EN UN HORARIO DE 12:00 A 20:00 HRS'
+    this.image6Url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq2q1Kr6gUE-U-Ibh3F_QoDGzEXAwh93KuaqSeQ5B-Rg&s'
+
 
   }
 
@@ -83,13 +94,27 @@ export class MyElement extends LitElement {
         <p>${this.paragraph1}</p>
         <img src="${this.image1Url}">
         <p>${this.paragraph2}</p>
+        <ul>
         <li><i>${this.list1Element1}</i></li>
         <li><i>${this.list1Element2}</i></li>
         <li><i>${this.list1Element3}</i></li>
         <li><i>${this.list1Element4}</i></li>
         <li><i>${this.list1Element5}</i></li>
         <li><i>${this.list1Element6}</i></li>
-           
+        
+      </ul>
+        <p>${this.paragraph3}</p>
+        <img src="${this.image2Url}">
+        <p>${this.paragraph4}</p>
+        <img src="${this.image3Url}">
+        <p>${this.paragraph5}</p>
+        <img src="${this.image4Url}">
+        <p>${this.paragraph6}</p>
+        <img src="${this.image5Url}">
+        <p>${this.paragraph7}</p>
+        <img src="${this.image6Url}">
+
+     
       </div>`
   }
       
@@ -101,10 +126,7 @@ export class MyElement extends LitElement {
         margin: 0 auto;
         padding: 2rem;
         text-align: center;
-      }
-
-      
-     
+      }   
       body{
         background-color: plum;
       }
@@ -113,7 +135,7 @@ export class MyElement extends LitElement {
         font-family: Georgia;
         color: rgb(165, 42, 144);
       }
-      #Estetica {
+      #Estetica Rossy {
         background-color: rgb(187, 109, 109);
         font-family: Times;
         color: blue;

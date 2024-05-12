@@ -1,6 +1,4 @@
 import { LitElement, css, html } from 'lit'
-import litLogo from './assets/lit.svg'
-import viteLogo from '/vite.svg'
 
 /**
  * An example element.
@@ -12,32 +10,31 @@ export class MyElement extends LitElement {
   static get properties() {
     return {
       /**
-       * Copy for the read the docs hint.
+       * Este es el titulo de mi pagina
        */
-      docsHint: { type: String },
-
+      title: { type: String },
       /**
-       * The number of times the button has been clicked.
+       * Este es el subtitulo de mi pagina
        */
-      count: { type: Number },
+      subtitulo: { type: String },
+      /**
+       * Este es mi parrafo 1
+       */
+      paragraph1: { type: String },     
     }
   }
 
   constructor() {
     super()
-    this.docsHint = 'Click on the Vite and Lit logos to learn more'
-    this.count = 0
+    this.title = 'ESTETICA'
+    this.subtitulo = 'ATENCION PERSONALIZADA'
+    this.paragraph1 = 'CALIDAD Y PRECIO'
   }
 
   render() {
     return html`
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src=${viteLogo} class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://lit.dev" target="_blank">
-          <img src=${litLogo} class="logo lit" alt="Lit logo" />
-        </a>
+        
       </div>
       <slot></slot>
       <div class="card">

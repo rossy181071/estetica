@@ -103,7 +103,10 @@ export class MyElement extends LitElement {
         <li><i>${this.list1Element6}</i></li>
         
       </ul>
+      <p>${this.paragraph3}</p>
+
         <p>${this.paragraph3}</p>
+      
         <img src="${this.image2Url}">
         <p>${this.paragraph4}</p>
         <img src="${this.image3Url}">
